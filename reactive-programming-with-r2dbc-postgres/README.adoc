@@ -1,0 +1,19 @@
+= Spring Reactive framework with R2DBC - PostgreSQL
+
+To run postgres as a docker image.
+```
+docker run -d -e POSTGRES_PASSWORD=password -p 5432:5432 postgres
+```
+
+Run PGAdmin client in docker
+```
+docker run -p 8090:80 \
+    -e 'PGADMIN_DEFAULT_EMAIL=user@domain.com' \
+    -e 'PGADMIN_DEFAULT_PASSWORD=SuperSecret' \
+    -d dpage/pgadmin4
+
+```
+
+Now while connecting to the localhost database which is available via docker image, You will need inspect the
+docker container and get the IP address from it.
+
