@@ -1,0 +1,18 @@
+= Spring boot reactive framework with MongoDB
+
+Here we explored how we can use spring reactive framework to communicate with mongodb.
+
+Run mongodb as a docker image:
+```
+ docker run -d -p 27017:27017 mongo
+```
+
+Connect to docker shell using docker exec command on the container
+```
+docker exec -it <container id> mongo --port 27017
+```
+Some queries while dealing with mongdb documents
+```
+db.person.find({})
+db.person.deleteMany({})
+```
