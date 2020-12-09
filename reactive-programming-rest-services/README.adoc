@@ -1,0 +1,10 @@
+= Spring Reactive framework with Rest Services
+
+This is just a simple implementation on how we can use spring reactive framework to make calls to
+a server with REST resources.
+
+In this exploration, we implemented reactive webclient, with a reactive handler to handle requests sent
+from the webclient.
+
+We also explored how we could use flux to create a stream in input values and have the error channel,
+the data channel (subscribe channel) and onComplete channel implemented as a handler.
